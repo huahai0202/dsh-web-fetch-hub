@@ -1,6 +1,6 @@
 {
   "name": "dsh-web-fetch-hub",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Exa Contents and Firecrawl scrape channels for the DeepSeek Harness web capability seam, in one bundle",
   "type": "module",
   "exports": {
