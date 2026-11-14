@@ -23,7 +23,7 @@
     "icon.svg"
   ],
   "scripts": {
-    "test": "node --import ./tests/register.mjs tests/mapping.test.mjs && node --import ./tests/register.mjs tests/provider.test.mjs"
+    "test": "node --import ./tests/register.mjs --test tests/hub.test.mjs tests/exa-mapping.test.mjs tests/exa-provider.test.mjs tests/firecrawl-mapping.test.mjs tests/firecrawl-provider.test.mjs"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "~4.1.0",
