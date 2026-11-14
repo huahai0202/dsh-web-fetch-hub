@@ -1,0 +1,15 @@
+# One bundle for the third-party fetch channels of ctx.web.
+#
+# The row registers both channel factories; each channel mounts only when its own
+# config key is present and not disabled. Exa is on by default because its key is
+# the one already in the credentials store; Firecrawl stays off until an operator
+# adds a `firecrawl` key, so a profile that never wanted it sees no extra entry in
+# the provider picker.
+#
+# Selection is unchanged: `fetchProvider: exa-fetch` or `firecrawl` on the
+# profile's `web` row picks the channel, exactly as the two separate bundles did.
+- insert:
+    - id: web-fetch-hub
+      name: 'dsh-web-fetch-hub'
+      config:
+        exa: {}

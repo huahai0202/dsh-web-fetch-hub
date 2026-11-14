@@ -1,0 +1,39 @@
+{
+  "name": "dsh-web-fetch-hub",
+  "version": "1.0.0",
+  "description": "Exa Contents and Firecrawl scrape channels for the DeepSeek Harness web capability seam, in one bundle",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./providers/exa": "./providers/exa.js",
+    "./providers/firecrawl": "./providers/firecrawl.js",
+    "./providers/exa/mapping": "./providers/exa-mapping.js",
+    "./providers/firecrawl/mapping": "./providers/firecrawl-mapping.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "transport.js",
+    "providers",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "scripts": {
+    "test": "node --import ./tests/register.mjs tests/mapping.test.mjs && node --import ./tests/register.mjs tests/provider.test.mjs"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0",
+    "@deepseek-ai/dsh-launch-environment": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-web": "0.2.2-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}

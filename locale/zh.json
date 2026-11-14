@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "第三方抓取渠道",
+    "description": "把 Exa Contents 与 Firecrawl 抓取合并为一个包。两个渠道都可注册，用 web 行的 fetchProvider 选择当前生效的那个。",
+    "detail": "docs/DETAIL.md"
+  }
+}

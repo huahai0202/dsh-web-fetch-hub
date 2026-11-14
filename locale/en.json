@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Third-party fetch channels",
+    "description": "One bundle for the Exa Contents and Firecrawl scrape fetch providers. Register both channels and pick the active one with fetchProvider on the web row.",
+    "detail": "docs/DETAIL.md"
+  }
+}

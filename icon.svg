@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="img" aria-label="Fetch channels">
+  <defs>
+    <linearGradient id="hubNode" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6b7f99"/>
+      <stop offset="1" stop-color="#4a5c74"/>
+    </linearGradient>
+  </defs>
+  <!-- one source on the left, two channels on the right -->
+  <circle cx="9" cy="18" r="4.6" fill="url(#hubNode)"/>
+  <circle cx="27" cy="9.5" r="4.2" fill="none" stroke="#3fa9a0" stroke-width="2.4"/>
+  <circle cx="27" cy="26.5" r="4.2" fill="none" stroke="#e2783c" stroke-width="2.4"/>
+  <path d="M13.2 16.2 23.2 10.6M13.4 19.8l9.8 5.6" stroke="#8a9bb2" stroke-width="2.1" stroke-linecap="round"/>
+</svg>
