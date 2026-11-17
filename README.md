@@ -115,12 +115,20 @@ standalone packages had, moved here unchanged.
 
 ## Migrating from the separate packages
 
+The standalone packages were retired once this bundle reached parity: their
+`mapping.js` and `transport.js` are here byte for byte, and every test came along.
+Their repositories are gone, so a profile still pointing at them resolves nothing
+and must be moved to this bundle.
+
 1. Install this bundle.
 2. Remove `dsh-web-fetch-exa` and `dsh-web-fetch-firecrawl` from the profile.
 3. Move each old row's config under `exa:` / `firecrawl:` in this bundle's row.
 4. Keep `fetchProvider` as it is.
 
 The channel ids did not change, so step 4 needs no edit.
+
+If a profile still lists a retired package, `dsh plugin` reports a missing
+dependency on the next package operation; removing the row clears it.
 
 ## License
 
